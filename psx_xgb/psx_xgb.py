@@ -7,7 +7,8 @@ url = "https://raw.githubusercontent.com/parzivalsupreme/Dataset/refs/heads/main
 df = pd.read_csv(url)
 
 
-# Features and target variable
+# Features and target variable 
+
 # Rolling Returns (1d, 3d, 5d)
 df["ret_1d"] = df["Close"].pct_change(1)
 df["retu_3d"] = df["Close"].pct_change(3)
